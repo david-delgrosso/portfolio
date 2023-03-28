@@ -10,6 +10,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import SideAnchor from "./components/SideAnchor";
 import Loader from "./components/Loader";
+import Footer from "./components/Footer";
 
 const StyledMainPage = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.background.primary,
@@ -46,6 +47,7 @@ function App() {
                   <About />
                   <Experience />
                   <Projects />
+                  <Footer />
                 </StyledMainContainer>
               </StyledMainPage>
             </>

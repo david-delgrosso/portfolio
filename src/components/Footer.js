@@ -10,13 +10,10 @@ import {
 } from "@mui/material";
 import { GitHub } from "@mui/icons-material";
 import {
-    CubeSvgPath,
     emailSvgPath,
     githubSvgPath,
-    linkedInSvgPath,
-    rocketLeagueSvgPath,
-    UTRSvgPath,
-} from "../SvgHelper";
+    linkedInSvgPath
+} from "./SvgHelper";
 
 //Component styles//
 const StyledFooterRoot = styled("section")(({ theme }) => ({
@@ -45,7 +42,7 @@ const StyledListItemLink = styled("a")(({ theme }) => ({
 }));
 const StyledViewCodeLink = styled("a")(({ theme }) => ({
     textDecoration: "unset",
-    color: theme.palette.textMain.main,
+    color: theme.palette.text.title,
     "&:hover": {
         color: theme.palette.text.title,
     },
@@ -127,7 +124,7 @@ const Footer = () => {
                         </StyledListItemLink>
                     </StyledFooterList>
                 )}
-                <StyledFooterText>Designed & Build by David Del Grosso</StyledFooterText>
+                <StyledFooterText>Designed & Built by David Del Grosso</StyledFooterText>
                 <StyledFooterText sx={{ marginBottom: "1rem" }}>
                     <StyledViewCodeLink href="https://github.com/david-delgrosso/portfolio">
                         View the code <GitHub sx={{ marginBottom: "-0.2rem" }} />

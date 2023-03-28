@@ -25,7 +25,7 @@ import {
 } from '@mui/material'
 
 const drawerWidth = 240;
-const navItems = ['About', 'Experience', 'Projects', 'Contact Me', 'Resume'];
+const navItems = ['About', 'Experience', 'Projects', 'Contact Me'];
 
 const StyledAppBar = styled(AppBar)(({ theme, isScrolled }) => ({
     transition:
@@ -47,6 +47,35 @@ const StyledAppBarContainer = styled("div")(({ theme }) => ({
     width: "90vw !important",
     [theme.breakpoints.down("sm")]: {
         width: "100vw !important",
+    },
+}));
+
+const StyledButton = styled(Button)(({ theme }) => ({
+    color: theme.palette.text.nav,
+    transform: "none",
+    transition: "0.2s",
+    cursor: "pointer",
+    "&:hover": {
+        transform: "scale(1.1)",
+    }
+}));
+
+const StyledResumeLink = styled("a")(({ theme }) => ({
+    cursor: "pointer",
+    textDecoration: "none",
+    display: "inline-flex",
+    "& p": {
+        borderRadius: "8px !important",
+        padding: "0.25rem 0.5rem",
+        marginLeft: "0.25rem",
+        fontSize: "14px",
+        color: theme.palette.text.nav,
+        backgroundColor: theme.palette.text.title + " !important",
+        transform: "none",
+        transition: "0.2s",
+        "&:hover": {
+            transform: "scale(1.1)",
+        }
     },
 }));
 
@@ -152,14 +181,22 @@ function Navbar() {
                             </Typography>
                             <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
 
-                                <Button onClick={toggleTheme}>
-                                    {theme === "light" ? <WbSunnyIcon sx={{ color: MuiTheme.palette.text.nav }} /> : <DarkModeIcon sx={{ color: MuiTheme.palette.text.nav }} />}
-                                </Button>
+                                <StyledButton onClick={toggleTheme}>
+                                    {theme === "light" ? <WbSunnyIcon /> : <DarkModeIcon />}
+                                </StyledButton>
                                 {navItems.map((item) => (
-                                    <Button key={item} sx={{ color: MuiTheme.palette.text.nav }} onClick={() => { scrollToSection(item) }}>
+                                    <StyledButton key={item} onClick={() => { scrollToSection(item) }}>
                                         {item}
-                                    </Button>
+                                    </StyledButton>
                                 ))}
+                                <StyledResumeLink
+                                    href={
+                                        process.env.PUBLIC_URL + "/static/david_delgrosso_resume.pdf"
+                                    }
+                                    target="_blank"
+                                >
+                                    <Typography>RESUME</Typography>
+                                </StyledResumeLink>
                             </Box>
                             <IconButton
                                 color="inherit"
