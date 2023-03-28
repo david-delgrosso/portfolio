@@ -12,7 +12,9 @@ export const lightTheme = createTheme({
             title: "#013A63",
             subtitle: "#2C7DA0",
             skills: "#013A63",
-            nav: "#FFFFFF"
+            nav: "#FFFFFF",
+            formtext: "#000000",
+            formbutton: "#FFFFFF"
         },
 
         background: {
@@ -21,7 +23,9 @@ export const lightTheme = createTheme({
             tertiary: "#013A63",
             skills: "#b5bdc8",
             nav: "#468faf",
-            form: "#a9d6e5"
+            form: "#a9d6e5",
+            formtext: "#FFFFFF",
+            formbutton: "#013A63"
         },
 
         accent: "#468faf",
@@ -40,7 +44,9 @@ export const darkTheme = createTheme({
             title: "#FFFFFF",
             subtitle: "#A9D6E5",
             skills: "#013A63",
-            nav: "#FFFFFF"
+            nav: "#FFFFFF",
+            formtext: "#FFFFFF",
+            formbutton: "#012A4A"
         },
 
         background: {
@@ -49,7 +55,9 @@ export const darkTheme = createTheme({
             tertiary: "#013A63",
             skills: "#b5bdc8",
             nav: "#012A4A",
-            form: "#a9d6e5"
+            form: "#01497c",
+            formtext: "#012A4A",
+            formbutton: "#979dac"
         },
 
         accent: "#A9D6E5",

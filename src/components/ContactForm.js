@@ -86,30 +86,31 @@ const ContactForm = () => {
                     >
                         <Typography>
                             <div className="mb-3">
-                                <label className="form-label" htmlFor="name">
+                                <label className="form-label" style={{fontWeight: "bold", color: theme.palette.text.formtext }} htmlFor="name">
                                     Full Name
                                 </label>
-                                <input className="form-control" type="text" name="name" placeholder="Enter your name here..." onChange={handleChange} required />
+                                <input className="form-control" style={{width: "95%", background: theme.palette.background.formtext, color: theme.palette.text.formtext }} type="text" name="name" placeholder="Enter your name here..." onChange={handleChange} required />
                             </div>
                             <div className="mb-3">
-                                <label className="form-label" htmlFor="email">
+                                <label className="form-label" style={{fontWeight: "bold", color: theme.palette.text.formtext }} htmlFor="email">
                                     Email
                                 </label>
-                                <input className="form-control" type="email" name="email" placeholder="Enter your email here..." onChange={handleChange} required />
+                                <input className="form-control" style={{width: "95%", background: theme.palette.background.formtext, color: theme.palette.text.formtext }} type="email" name="email" placeholder="Enter your email here..." onChange={handleChange} required />
                             </div>
                             <div className="mb-3">
-                                <label className="form-label" htmlFor="message">
+                                <label className="form-label" style={{fontWeight: "bold", color: theme.palette.text.formtext }} htmlFor="message">
                                     Message
                                 </label>
-                                <textarea className="form-control" name="message" placeholder="Enter your message here..." onChange={handleChange} required />
+                                <textarea className="form-control" style={{width: "95%", background: theme.palette.background.formtext, color: theme.palette.text.formtext }} name="message" placeholder="Enter your message here..." onChange={handleChange} required />
                             </div>
                             <button
                                 className={`btn ${formSubmitted ? "disabled" : ""}`}
                                 style={{
-                                    color: theme.palette.text.secondary,
-                                    backgroundColor: theme.palette.text.title,
-                                    width: "50%",
-                                    marginInline: "25%"
+                                    color: theme.palette.text.formbutton,
+                                    backgroundColor: theme.palette.background.formbutton,
+                                    width: "30%",
+                                    marginInline: "35%",
+                                    fontWeight: "bold"
                                 }}
                                 type="submit"
                             >

@@ -52,10 +52,12 @@ const StyledAppBarContainer = styled("div")(({ theme }) => ({
 
 const StyledButton = styled(Button)(({ theme }) => ({
     color: theme.palette.text.nav,
+    minWidth: "40px",
     transform: "none",
-    transition: "0.2s",
+    transition: "none",
     cursor: "pointer",
     "&:hover": {
+        transition: "0.2s",
         transform: "scale(1.1)",
     }
 }));
@@ -69,7 +71,8 @@ const StyledResumeLink = styled("a")(({ theme }) => ({
         padding: "0.25rem 0.5rem",
         marginLeft: "0.25rem",
         fontSize: "14px",
-        color: theme.palette.text.nav,
+        fontWeight: "bold",
+        color: theme.palette.background.primary,
         backgroundColor: theme.palette.text.title + " !important",
         transform: "none",
         transition: "0.2s",
@@ -180,7 +183,6 @@ function Navbar() {
                                 </Button>
                             </Typography>
                             <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-
                                 <StyledButton onClick={toggleTheme}>
                                     {theme === "light" ? <WbSunnyIcon /> : <DarkModeIcon />}
                                 </StyledButton>
