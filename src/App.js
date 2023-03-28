@@ -11,6 +11,9 @@ import Projects from "./components/Projects";
 import SideAnchor from "./components/SideAnchor";
 import Loader from "./components/Loader";
 import Footer from "./components/Footer";
+import ContactForm from "./components/ContactForm";
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import "../node_modules/semantic-ui-css/semantic.min.css"
 
 const StyledMainPage = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.background.primary,
@@ -47,6 +50,7 @@ function App() {
                   <About />
                   <Experience />
                   <Projects />
+                  <ContactForm />
                   <Footer />
                 </StyledMainContainer>
               </StyledMainPage>

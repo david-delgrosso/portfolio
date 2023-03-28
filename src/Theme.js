@@ -20,7 +20,8 @@ export const lightTheme = createTheme({
             secondary: "#000000",
             tertiary: "#013A63",
             skills: "#b5bdc8",
-            nav: "#468faf"
+            nav: "#468faf",
+            form: "#a9d6e5"
         },
 
         accent: "#468faf",
@@ -47,7 +48,8 @@ export const darkTheme = createTheme({
             secondary: "#FFFFFF",
             tertiary: "#013A63",
             skills: "#b5bdc8",
-            nav: "#012A4A"
+            nav: "#012A4A",
+            form: "#a9d6e5"
         },
 
         accent: "#A9D6E5",

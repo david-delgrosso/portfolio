@@ -98,10 +98,6 @@ const Experience = () => {
         slidesToScroll: 1,
     };
 
-    const descriptionList = (list) => {
-
-    }
-
     return (
         <Scroll.Element name="Experience">
             <StyledGenericRoot ref={experienceContainer}>
