@@ -1,0 +1,36 @@
+[
+    {
+        "id": "0",
+        "title": "NBA Scores Predictor",
+        "image": "../static/nba_web_app.png",
+        "description": "A web app that generates and displays predictions for daily NBA matchups",
+        "skills": [
+            "Django",
+            "AWS",
+            "MySQL RDS",
+            "Elastic Beanstalk",
+            "Numpy",
+            "Pandas",
+            "Scikit Learn",
+            "Matplotlib"
+        ],
+        "websiteLink": "http://sports-app-env.eba-khdc2nef.us-east-1.elasticbeanstalk.com/",
+        "githubLink": "https://github.com/david-delgrosso/SportsApp"
+    },
+    {
+        "id": "1",
+        "title": "Grocery Store List",
+        "image": "../static/grocery_list.png",
+        "description": "A web app used for managing a grocery list and recipe book",
+        "skills": [
+            "React",
+            "Django",
+            "AWS",
+            "MySQL RDS",
+            "EC2",
+            "Material-UI"
+        ],
+        "websiteLink": "http://3.218.241.227",
+        "githubLink": "https://github.com/david-delgrosso/GroceryList"
+    }
+]

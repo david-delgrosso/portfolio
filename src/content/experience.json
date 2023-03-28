@@ -1,0 +1,22 @@
+[
+    {
+        "id": "0",
+        "company": "Summit Technology Group",
+        "jobTitle": "Jr. Software Engineer",
+        "years": "2023 - Present",
+        "description": [
+            "TBD"
+        ]
+    },
+    {
+        "id": "1",
+        "company": "Northrop Grumman Corporation",
+        "jobTitle": "Aerospace Engineer",
+        "years": "2019 - 2023",
+        "description": [
+            "Implemented a range of guidance, navigation, and control flight software solutions for space systems",
+            "Performed spacecraft modeling and simulation development",
+            "Executed monte carlo analyses to assess spacecraft stability throughout various mission phases, including target pointing, delta-v maneuvers, deployment, and relative orbital operations"
+        ]
+    }
+]
