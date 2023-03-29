@@ -2,7 +2,7 @@
     {
         "id": "0",
         "title": "NBA Scores Predictor",
-        "image": "../static/nba_web_app.png",
+        "image": "./portfolio/static/nba_web_app.png",
         "description": "A web app that generates and displays predictions for daily NBA matchups",
         "skills": [
             "Django",
@@ -20,7 +20,7 @@
     {
         "id": "1",
         "title": "Grocery Store List",
-        "image": "../static/grocery_list.png",
+        "image": "./portfolio/static/grocery_list.png",
         "description": "A web app used for managing a grocery list and recipe book",
         "skills": [
             "React",

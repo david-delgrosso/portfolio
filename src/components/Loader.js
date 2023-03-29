@@ -61,9 +61,9 @@ const Loader = () => {
                         55 -156 7 -212 -20 -23 -31 -27 -77 -28 l-54 0 -3 133 -3 132 50 0 c38 0 56
                         -6 80 -25z"
                         transform="translate(0.000000,80.000000) scale(0.100000,-0.100000)"
-                        fill={theme.palette.accent}
+                        fill="none"
                         stroke={theme.palette.accent}
-                        strokeWidth="20"
+                        strokeWidth="55"
                         variants={pathVariants}
                     />
                 </motion.svg>
