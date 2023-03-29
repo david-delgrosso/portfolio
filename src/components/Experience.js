@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React } from "react";
 import { Container, styled, useTheme, List, ListItem, ListItemText, ListItemIcon } from "@mui/material";
 import {
     StyledDivider,
@@ -35,13 +35,13 @@ const StyledCarouselContainer = styled(Container)(({ theme }) => ({
 const StyledCarouselCard = styled("div")(({ theme }) => ({
     borderRadius: "2rem !important",
     padding: "2rem 2rem",
-    backgroundImage: `radial-gradient(ellipse at center, ${theme.palette.background.tertiary}10, ${theme.palette.background.tertiary}40)`,
+    backgroundImage: `radial-gradient(ellipse at center, ${theme.palette.background.tertiary}30, ${theme.palette.background.tertiary}70)`,
     [theme.breakpoints.down("sm")]: {
         padding: "1.25rem 1.25rem",
     },
     maxWidth: "75%",
     border: `0.25rem solid ${theme.palette.accent}70`,
-    height: "20rem"
+    height: "30rem"
 }));
 const StyledCarouselTitle = styled(Typography)(({ theme }) => ({
     fontSize: "clamp(28px, 4vw, 44px) !important",
@@ -52,7 +52,6 @@ const StyledCarouselSubTitle = styled(Typography)(({ theme }) => ({
     color: theme.palette.text.subtitle,
 }));
 const StyledCarouselSubText = styled(Typography)(({ theme }) => ({
-    marginTop: "1rem !important",
     fontSize: "clamp(16px, 1.8vw, 24px) !important",
     color: theme.palette.text.primary,
     marginTop: "0"

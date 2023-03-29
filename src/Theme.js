@@ -52,7 +52,7 @@ export const darkTheme = createTheme({
         background: {
             primary: "#012A4A",
             secondary: "#FFFFFF",
-            tertiary: "#013A63",
+            tertiary: "#01497c",
             skills: "#b5bdc8",
             nav: "#012A4A",
             form: "#01497c",
