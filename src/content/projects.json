@@ -15,6 +15,7 @@
             "Matplotlib"
         ],
         "websiteLink": "http://sports-app-env.eba-khdc2nef.us-east-1.elasticbeanstalk.com/",
+        "websiteActive": false,
         "githubLink": "https://github.com/david-delgrosso/SportsApp"
     },
     {
@@ -30,7 +31,8 @@
             "EC2",
             "Material-UI"
         ],
-        "websiteLink": "http://3.218.241.227",
+        "websiteLink": "http://ec2-3-218-241-227.compute-1.amazonaws.com",
+        "websiteActive": false,
         "githubLink": "https://github.com/david-delgrosso/GroceryList"
     }
 ]

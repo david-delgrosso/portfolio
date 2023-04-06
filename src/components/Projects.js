@@ -239,7 +239,7 @@ const Projects = () => {
                           </StyledProjectsSkillText>
                         ))}
                       </StyledProjectsSkillContainer>
-                      {project.websiteLink && (
+                      {project.websiteActive && (
                         <StyledProjectsOpenLink
                           href={project.websiteLink}
                           target="_blank"
