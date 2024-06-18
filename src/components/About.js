@@ -61,7 +61,7 @@ const About = () => {
                     </StyledGenericTitle>
                     <StyledDivider />
                     <StyledGenericSubText>
-                        Welcome! My name is David and I recently completed a career transition into full-stack software engineering. After developing software solutions for space systems for about 4 years, I discovered that my heart was more invested in the coding than in the math and physics. Through online classes and personal projects, I spent about a year learning everything I could about software development. Below are several of the languages and technologies I've become proficient in over the course of my journey.
+                        Welcome! My name is David and I've been working as a Software Engineer since early 2023. After developing software solutions for space systems for about 4 years, I discovered that my heart was more invested in the coding than in the math and physics. Through online classes and personal projects, I spent about a year learning everything I could about software development. I'm glad to say I've gotten in the swing of things and pride myself on continuing to grow into the best software engineer I can be. Below are several of the languages and technologies I've become proficient in over the course of my journey.
                     </StyledGenericSubText>
                     <StyledSkillsGrid>
                         {skillsArr.map((skill) => (

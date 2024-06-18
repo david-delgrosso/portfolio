@@ -2,10 +2,13 @@
     {
         "id": "0",
         "company": "Summit Technology Group",
-        "jobTitle": "Jr. Software Engineer",
+        "jobTitle": "Software Engineer",
         "years": "2023 - Present",
         "description": [
-            "TBD"
+            "Backend software development role using the Django framework",
+            "Key contributor in creating a modern, scalable, and performant disaster lending platform used by the Small Business Administration – over 2M users and processed over 20M applications",
+            "Took leadership role developing integration interface with the Federal Emergency Management Agency, creating a reminder feature for the platform, and writing an internal tool that streamlines the creation of new loan application workflows",
+            "Improved environment rebuild times by over 50% by designing and implementing proper migration practices"
         ]
     },
     {

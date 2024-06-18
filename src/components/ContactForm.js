@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { useInView, InView } from "react-intersection-observer";
+import { useInView } from "react-intersection-observer";
 import * as Scroll from "react-scroll";
 import {
     StyledDivider,
@@ -9,7 +9,7 @@ import {
     StyledGenericTitle,
 } from "./Styles";
 import "animate.css";
-import { useTheme, styled, Typography } from '@mui/material';
+import { useTheme, Typography } from '@mui/material';
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
@@ -72,7 +72,7 @@ const ContactForm = () => {
                         <StyledDivider />
                     </StyledGenericTitle>
                     <StyledGenericSubText component="h1">
-                        While I'm not actively looking for new opportunities, I'm always open to making new connections. Feel free to reach out and I will do my best to respond in a timely manner.
+                        I'm actively looking for new opportunities! Feel free to reach out and I will do my best to respond in a timely manner.
                     </StyledGenericSubText>
                     <form
                         style={{
