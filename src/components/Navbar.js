@@ -3,7 +3,6 @@ import { ThemeContext } from "../ThemeContext";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import MenuIcon from '@mui/icons-material/Menu';
-import { TbSquareLetterD } from "react-icons/tb";
 import * as Scroll from "react-scroll";
 import {
     useTheme,
@@ -11,20 +10,13 @@ import {
     Typography,
     AppBar,
     Box,
-    Divider,
-    Drawer,
     IconButton,
-    List,
-    ListItem,
-    ListItemButton,
-    ListItemText,
     Toolbar,
     Button,
     Slide,
     useScrollTrigger
 } from '@mui/material'
 
-const drawerWidth = 240;
 const navItems = ['About', 'Experience', 'Projects', 'Contact Me'];
 
 const StyledAppBar = styled(AppBar)(({ theme, isScrolled }) => ({
@@ -128,24 +120,6 @@ function Navbar() {
             duration: 1000,
         });
     };
-
-    const drawer = (
-        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-            <Typography variant="h6" sx={{ my: 2 }}>
-                MUI
-            </Typography>
-            <Divider />
-            <List>
-                {navItems.map((item) => (
-                    <ListItem key={item} disablePadding>
-                        <ListItemButton sx={{ textAlign: 'center' }}>
-                            <ListItemText primary={item} />
-                        </ListItemButton>
-                    </ListItem>
-                ))}
-            </List>
-        </Box>
-    );
 
     return (
         <Slide appear={false} direction="down" in={!trigger}>

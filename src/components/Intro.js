@@ -1,10 +1,6 @@
-import { React, useState, useEffect } from 'react'
+import { React, useState } from 'react'
 import { Typography, styled, Grid } from "@mui/material";
-import {
-    StyledGenericRoot,
-    StyledGenericContainer,
-    StyledDivider,
-} from "./Styles"
+import { StyledGenericRoot, StyledGenericContainer } from "./Styles"
 import headshot from "../static/photo_of_me_square.jpg"
 
 const StyledIntroGrid = styled(Grid)(({ ismobile }) => ({
@@ -53,20 +49,6 @@ const StyledIntroSubText = styled(Typography)(({ theme }) => ({
 
 const Intro = () => {
     const [headshotImg, setHeadshotImg] = useState(headshot)
-
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         setIsloading(false);
-    //     }, 2400);
-
-    //     const loadImage = async () => {
-    //         const img = new Image();
-    //         img.src = headshot;
-    //         await img.decode();
-    //         setHeadshotImg(headshot);
-    //     };
-    //     loadImage();
-    // }, []);
 
     return (
         <StyledGenericRoot>
